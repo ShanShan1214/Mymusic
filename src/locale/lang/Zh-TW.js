@@ -6,4 +6,11 @@ export default{
         search: '搜尋',
         github: 'GitHub Repo',
       },
+      home: {
+        recommendPlaylist: '推薦歌單',
+        recommendArtist: '推薦藝人',
+        newAlbum: '新曲上架',
+        seeMore: '查看全部',
+        charts: '排行榜',
+      },
 }

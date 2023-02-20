@@ -1,31 +1,18 @@
 <template>
   <div id="app">
-   <nav-header></nav-header>
-   
+    <nav-header></nav-header>
+    <footer-play></footer-play>
   </div>
 </template>
 
 <script>
-import NavHeader from './components/NavHeader.vue'
-
 export default {
-  components: { NavHeader },
-
-}
+  name: "App",
+  components: {
+    NavHeader: () => import("./components/NavHeader.vue"),
+    FooterPlay: () => import("./components/FooterPlay.vue"),
+  },
+};
 </script>
 <style>
-
-/* 
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-} */
 </style>

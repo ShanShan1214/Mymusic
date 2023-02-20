@@ -85,6 +85,10 @@ nav {
   }
   .nav-button{
     font-size: 25px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     .el-icon-arrow-left,svg{
       display: inline-block;
       width: 25px;

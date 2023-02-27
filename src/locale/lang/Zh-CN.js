@@ -12,5 +12,7 @@ export default{
         newAlbum: '新专速递',
         seeMore: '查看全部',
         charts: '排行榜',
+        foryou:"为你而生"
+
       },
 }

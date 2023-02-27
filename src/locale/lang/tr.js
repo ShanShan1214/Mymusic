@@ -12,5 +12,6 @@ export default {
         newAlbum: 'Son Çıkan Albümler',
         seeMore: 'DAHA FAZLASI',
         charts: 'Listeler',
+        foryour:'Une vie à t attendre'
       },
 }

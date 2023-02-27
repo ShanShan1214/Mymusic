@@ -38,6 +38,12 @@
         </dl>
       </div>
     </div>
+    <div class="ForYour">
+      <div class="title">
+        <p class="header">{{ $t("home.foryou") }}</p>
+        <!-- <a>{{ $t("home.seeMore") }}</a> -->
+      </div>
+    </div>
   </div>
 </template>
 
@@ -46,11 +52,13 @@
 
 import { byAppleMusic } from "@/model/appleMusic.js";
 import { topPlayList } from "@/service/service";
+import axios from "axios"
 export default {
   // name: '',
   data() {
     return {
       topPlayList: [],
+      foryouList:[]
     };
   },
   components: {},
@@ -65,6 +73,14 @@ export default {
       this.topPlayList = playlist.result;
     }
     console.log(this.topPlayList);
+    axios({
+      url:"https://mock.apifox.cn/m1/2360032-0-default/foryou1",
+      methods:"get"
+    }).then(res=>{
+      console.log(res);
+      this.foryouList=res.data
+    })
+
   },
 };
 </script>
@@ -179,13 +195,12 @@ export default {
       font-size: 16px;
     }
     .classRow {
-      dl:nth-child(1){
-
-   
-    dt{
-     margin-bottom: 20px;
+      dl:nth-child(1) {
+        dt {
+          margin-bottom: 20px;
+        }
+      }
     }
-    }}
   }
 }
 </style>

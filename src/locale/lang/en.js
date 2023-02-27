@@ -12,5 +12,6 @@ export default {
         newAlbum: 'Latest Albums',
         seeMore: 'SEE MORE',
         charts: 'Charts',
+        foryou:'Fou You'
       },
 }

@@ -12,5 +12,6 @@ export default{
         newAlbum: '新曲上架',
         seeMore: '查看全部',
         charts: '排行榜',
+        foryou:'為你而生'
       },
 }
